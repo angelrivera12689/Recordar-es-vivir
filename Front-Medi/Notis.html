@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toggle Notificaciones</title>
+<!-- FontAwesome para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="/Css/Notis.css">
+</head>
+<body>
+<div class="button-container-left">
+  <a href="/Medicamentos.html" class="btn-back">Regresar</a>
+</div>
+
+<h1><i class="fas fa-bell"></i> Control de Notificaciones</h1>
+
+<div id="alertContainer"></div>
+<div id="loadingContainer">Cargando estado de notificaciones...</div>
+
+<div class="notification-toggle-container">
+  <div class="notification-icon" id="notificationIcon">
+    <i class="fas fa-bell-slash"></i>
+  </div>
+
+  <div class="toggle-label">
+    <div class="toggle-title">Notificaciones por Email</div>
+    <div class="toggle-description">Activa o desactiva el envío automático de recordatorios por correo electrónico</div>
+  </div>
+
+  <label class="toggle-switch">
+    <input type="checkbox" id="notificationToggle" />
+    <span class="slider"></span>
+  </label>
+
+  <div class="toggle-status" id="toggleStatus">
+    <span id="statusText">Cargando...</span>
+  </div>
+</div>
+
+<script src="/Js/activarNotis.js"></script>
+
+</body>
+</html>
